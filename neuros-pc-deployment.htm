@@ -1,0 +1,350 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Neuros Computer OS Deployment</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-SG link=blue vlink=purple style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal><b><u><span lang=EN>INSTALLING BOOT DISK OPERATING SYSTEM</span></u></b></li>
+ <li class=MsoNormal><span lang=EN>Insert Macrium WinPE USB Disk into the USB
+     port of the PC/Laptop</span></li>
+ <li class=MsoNormal><span lang=EN>Power on the PC/Laptop. When the boot screen
+     flashes, enter the computer’s BIOS by pressing &lt;F2&gt; or &lt;Del&gt;
+     button</span></li>
+ <li class=MsoNormal><span lang=EN>Inside BIOS screen, navigate to the BOOT
+     Menu and change the BOOT ORDER or BOOT OPTION to USB in the first boot
+     order</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN><img width=624
+height=466 id=image7.jpg src="neuros-pc-deployment_files/image001.jpg"></span></p>
+
+<ol style='margin-top:0cm' start=5 type=1>
+ <li class=MsoNormal><span lang=EN>From BIOS, SAVE &amp; RESTART the computer.</span></li>
+ <li class=MsoNormal><span lang=EN>The Computer will now enter into the Macrium
+     Reflect Windows PE environment.<img width=600 height=462 id=image5.png
+     src="neuros-pc-deployment_files/image002.jpg"></span></li>
+ <li class=MsoNormal><span lang=EN>Choose the RESTORE Option. Navigate and
+     Browse to the USB Drive partition with “Generic PC 2” image file inside
+     and select this file to restore to the current &lt;C:&gt; Drive of the
+     PC/Laptop</span></li>
+ <li class=MsoNormal><span lang=EN>Once the Restore process is completed, when
+     prompted, Remove the USB drive FIRST and then choose the &lt;Restart the
+     PC&gt; Option. The computer will now restart into Windows 10 normal OS
+     environment.</span></li>
+ <li class=MsoNormal><span lang=EN>Upon logging into the computer using the
+     admin password (<span style='background:yellow'>strength88</span>), log on
+     to the Admin account.</span></li>
+ <li class=MsoNormal><b><u><span lang=EN>INSTALLING ZEROTIER VPN &amp;
+     ACCESSING NEUROS NETWORK</span></u></b></li>
+ <li class=MsoNormal><span lang=EN>Inside the Administrator Account &lt;Download&gt;
+     Folder, you will find the “Zerotier One” installation file. Double click
+     on this file to install the Zerotier VPN on to the computer</span></li>
+ <li class=MsoNormal><span lang=EN>In the taskbar area you will find the
+     Zerotier icon <img width=22 height=26 id=image11.jpg
+     src="neuros-pc-deployment_files/image003.jpg">. Right click and select
+     &lt;Join New Network&gt;. Key in the Network name <b><u>93afae5963b7400c .
+     </u></b>Make sure you also select the option &lt;Start UI at login&gt; so
+     that zerotier starts immediately upon user logon.</span></li>
+ <li class=MsoNormal><span lang=EN>After the previous step, the computer will
+     be connected to the Neuros VPN Network.</span></li>
+ <li class=MsoNormal><b><u><span lang=EN>INSTALLING RUSTDESK SOFTWARE</span></u></b></li>
+ <li class=MsoNormal><span lang=EN>Inside the &lt;Download&gt; folder, you will
+     also find the “rustdesk” installation file. Click on this file to install
+     Rustdesk on the computer</span></li>
+ <li class=MsoNormal><span lang=EN>In the taskbar area, you will find the
+     Rustdesk icon <img width=22 height=26 id=image8.jpg
+     src="neuros-pc-deployment_files/image004.jpg">. Right click and
+     &lt;Open&gt; to configure the settings. In the top right hand corner click
+     on the 3 lines to access the Settings page:<img width=625 height=325
+     id=image1.png src="neuros-pc-deployment_files/image005.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>Click on the &lt;Security&gt; tab to access
+     the Security settings. Click &lt;unlock security settings&gt;: to continue</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN><img width=624
+height=330 id=image9.png src="neuros-pc-deployment_files/image006.gif"></span></p>
+
+<ol style='margin-top:0cm' start=18 type=1>
+ <li class=MsoNormal><span lang=EN>In the Password section, select the “Use
+     Permanent Password” option to set the Admin/Team Manager-assigned
+     password.</span></li>
+ <li class=MsoNormal><span lang=EN>You have completed the VPN and Rustdesk
+     installation now. <b><span style='color:red'>Record down the Desktop ID
+     number into your notebook for filing and reference.</span></b></span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span lang=EN
+style='color:red'><img width=114 height=111 id=image2.jpg
+src="neuros-pc-deployment_files/image007.jpg"></span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span lang=EN
+style='color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span lang=EN
+style='color:red'>&nbsp;</span></b></p>
+
+<ol style='margin-top:0cm' start=20 type=1>
+ <li class=MsoNormal><b><u><span lang=EN>MAPPING NETWORK DRIVE</span></u></b></li>
+ <li class=MsoNormal><span lang=EN>Log out of Admin account and Login to
+     Employee account with password <span style='background:yellow'>Neuros</span>.</span></li>
+ <li class=MsoNormal><span lang=EN>From the Windows icon button, run the
+     Rustdesk program.</span></li>
+ <li class=MsoNormal><span lang=EN>From the Windows icon button, run the
+     Zerotier program. Connect to the Network as configured earlier in Step
+     #12. Wait for the connection to complete in the taskbar icon.</span></li>
+ <li class=MsoNormal><span lang=EN>Now go to the File Explorer. In the My
+     Computer icon, right click and select “Map Network Drive”, or select
+     &lt;Map Network Drive&gt; from the top toolbar.</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN><img width=473
+height=258 id=image6.png src="neuros-pc-deployment_files/image008.jpg"></span></p>
+
+<ol style='margin-top:0cm' start=25 type=1>
+ <li class=MsoNormal><span lang=EN>In the settings, select an available drive
+     letter and key in the Folder Path.</span></li>
+</ol>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>            The format for the Folder Path is:
+<span style='background:yellow'>\\192.168.192.70\nas<b><span style='color:red'>X</span></b></span><b><span
+style='color:red'>,</span></b></span></p>
+
+<p class=MsoNormal><b><span lang=EN style='color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='color:red'>            </span><span
+lang=EN>Where <span style='color:red'>X</span> is the new employee’s department
+server number as referenced below:</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><u><span lang=EN
+style='color:red'>X</span></u></b><span lang=EN>                     <b><u> Department</u></b></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>1                      Management/Corporate
+(for dept managers and directors)</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>2                      Service
+&amp; Product</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>3                      Common
+Server (for ALL staff)</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>5                      Engineering</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>6                      Project</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>7                      Marketing</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>8                      Tendering
+&amp; Contracts</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>9                      HR
+&amp; Admin</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>.<img width=415
+height=347 id=image12.jpg src="neuros-pc-deployment_files/image009.jpg"></span></p>
+
+<ol style='margin-top:0cm' start=26 type=1>
+ <li class=MsoNormal><span lang=EN>Upon clicking Finish the system will prompt
+     for the Employee’s username and password. Key in the employee’s
+     credentials as given by the IT Administrator.</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN><img width=348
+height=268 id=image3.jpg src="neuros-pc-deployment_files/image010.jpg"></span></p>
+
+<ol style='margin-top:0cm' start=27 type=1>
+ <li class=MsoNormal><span lang=EN>Note: Common Server (NAS3) should be mapped
+     for ALL computers.</span></li>
+ <li class=MsoNormal><b><u><span lang=EN>ADDING EMPLOYEE’S EMAIL ACCOUNT TO MS
+     OUTLOOK</span></u></b></li>
+ <li class=MsoNormal><span lang=EN>When first launching MS Outlook, it will
+     prompt you to enter the employee’s email address</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN><img width=259
+height=297 id=image4.png src="neuros-pc-deployment_files/image011.gif"></span></p>
+
+<ol style='margin-top:0cm' start=30 type=1>
+ <li class=MsoNormal><span lang=EN>Enter the required email address field,
+     click &lt;Connect&gt; and enter user password</span></li>
+ <li class=MsoNormal><span lang=EN>Wait for welcome email or test email to be
+     received.</span></li>
+ <li class=MsoNormal><b><u><span lang=EN>DISABLE ADDING EMAIL ACCOUNT</span></u></b></li>
+ <li class=MsoNormal><span lang=EN>After successfully setting up the email
+     account, close MS Outlook.</span></li>
+ <li class=MsoNormal><span lang=EN>Log out of the Employee account and login
+     back to the Admin account.</span></li>
+ <li class=MsoNormal><span lang=EN>Press on the Windows icon on bottom left and
+     type in <span style='background:yellow'>Regedit</span> and &lt;ENTER&gt;</span></li>
+ <li class=MsoNormal><span lang=EN>When prompted, make sure you select “Run As
+     Administrator”.</span></li>
+ <li class=MsoNormal><span lang=EN>In REGEDIT, navigate and browse to the
+     following directory:</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN style='background:
+yellow'>Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Outlook\Options</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN><img width=530
+height=201 id=image10.jpg src="neuros-pc-deployment_files/image012.jpg"></span></p>
+
+<ol style='margin-top:0cm' start=38 type=1>
+ <li class=MsoNormal><span lang=EN>In the right hand side of the window pane,
+     right click, Select &lt;NEW&gt;, and select &lt;DWORD (32 bit) Value&gt;.
+     Name this value as </span><b><span lang=EN style='font-size:10.5pt;
+     line-height:115%;color:#0A0C0D;background:white'>DisablePOP3</span></b><span
+     lang=EN style='font-size:10.5pt;line-height:115%;color:#0A0C0D;background:
+     white'>. Right click this <b>DisablePOP3</b> entry and select
+     &lt;MODIFY&gt;. Enter a value of </span><span lang=EN style='font-size:
+     10.5pt;line-height:115%;color:#0A0C0D;background:yellow'>1</span><span
+     lang=EN style='font-size:10.5pt;line-height:115%;color:#0A0C0D;background:
+     white'> in the Value Data field.</span></li>
+ <li class=MsoNormal><span lang=EN>Repeat the process in step 33 above for each
+     of the below DWORD entries. Make sure the value data fields are set to
+     value of 1 in all the entries:</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span lang=EN
+style='font-size:10.5pt;line-height:115%;color:#0A0C0D;background:yellow'>DisableIMAP</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span lang=EN
+style='font-size:10.5pt;line-height:115%;color:#0A0C0D;background:yellow'>DisableExchange</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span lang=EN
+style='font-size:10.5pt;line-height:115%;color:#0A0C0D;background:yellow'>DisableHTTP</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%'><b><span
+lang=EN style='font-size:10.5pt;line-height:150%;color:#0A0C0D;background:yellow'>DisableOtherTypes</span></b></p>
+
+<ol style='margin-top:0cm' start=40 type=1>
+ <li class=MsoNormal><span lang=EN>After successfully completing the above
+     step, close REGEDIT and restart the computer. The user will not be able to
+     add any additional account to MS Outlook.</span></li>
+ <li class=MsoNormal><span lang=EN>Log on to the Admin account</span></li>
+ <li class=MsoNormal><span lang=EN>Inside the &lt;Download&gt; folder, you will
+     also find the “syncthing” installation file. Click on this file to install
+     Syncthing on the computer</span></li>
+ <li class=MsoNormal><span lang=EN>When prompted from the installation dialog
+     boxes, select Allow Firewall Rule for Syncthing and also to Run Syncthing
+     at Startup. Leave the rest of the settings as they are.</span></li>
+ <li class=MsoNormal><span lang=EN>After the installation steps above have been
+     completed, open the browser and enter in the address URL:  <a
+     href="https://127.0.0.1:8384/"><span style='background:yellow'>https://127.0.0.1:8384/</span></a></span></li>
+ <li class=MsoNormal><span lang=EN>Click on the Default Folder on the interface
+     and select &lt;Edit&gt;, then &lt;Remove&gt; the Default Folder.</span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=525 height=339
+     id="Picture 1" src="neuros-pc-deployment_files/image013.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>Click on the ACTION button, select SHOW ID
+     and then <b><span style='color:red;background:yellow'>copy the DEVICE ID
+     Code and inform System Administrator of this code</span></b>.</span></li>
+ <li class=MsoNormal><span lang=EN>Click on the ACTION button again, select
+     SETTINGS and go to the GUI tab. Set the Employee’s user and password credentials
+     into this setting. Click &lt;save&gt; after its done.</span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=623 height=375
+     id="Picture 2" src="neuros-pc-deployment_files/image014.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>After setting user credential, login to the
+     URL as stated in step 44 using the user and password as previously set</span></li>
+ <li class=MsoNormal><span lang=EN>Go to the <span style='background:yellow'>F:\</span>
+     Drive from File Explorer. Create a folder called “<span style='background:
+     yellow'>Working_Folder</span>” in F:\ Drive.</span></li>
+ <li class=MsoNormal><span lang=EN>Wait for the next message of server-client
+     connection. Click &lt;Add Device&gt; and rename the computer requesting
+     connection as Neuros Server</span></li>
+ <li class=MsoNormal><span lang=EN><img width=624 height=408
+     src="neuros-pc-deployment_files/image015.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>Wait for the next message of folder sharing.
+     Click on the &lt;Add&gt; button to add the folder shared.</span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=624 height=327
+     id="Picture 4" src="neuros-pc-deployment_files/image016.jpg"></span></li>
+ <li class=MsoNormal><span lang=EN>Label the Folder Label with the <b><span
+     style='color:red;background:yellow'>Employee’s</span><span
+     style='color:red'> <span style='background:yellow'>Department name</span></span></b>.
+     DO NOT CHANGE the Folder ID. Under Folder Path change it to <b><span
+     style='color:red;background:yellow'>F:\Working_Folder</span></b></span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=624 height=397
+     id="Picture 5" src="neuros-pc-deployment_files/image017.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>After completing above configuration, click
+     &lt;Save&gt; and close the browser.</span></li>
+ <li class=MsoNormal><span lang=EN>Restart the Computer.</span></li>
+ <li class=MsoNormal><span lang=EN>Log into the Admin account. Click the Window
+     icon and type in <span style='background:yellow'>gpedit</span> and
+     &lt;Enter&gt;</span></li>
+ <li class=MsoNormal><span lang=EN>Navigate to User Configuration and click on
+     ADMINISTRATIVE TEMPLATE. On the right-hand window, double click ALL
+     SETTINGS</span></li>
+ <li class=MsoNormal><span lang=EN>Scroll down the Settings and double click on
+     PREVENT ACCESS TO FILES FROM MY COMPUTER</span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=624 height=308
+     id="Picture 8" src="neuros-pc-deployment_files/image018.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>In this setting, Select ENABLED, then under
+     the combination select “Restrict C Drive Only”</span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=551 height=510
+     id="Picture 9" src="neuros-pc-deployment_files/image019.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>Click &lt;Apply&gt;</span></li>
+ <li class=MsoNormal><span lang=EN>Scroll down and search the setting for “Hide
+     these specified drives in My Computer</span></li>
+ <li class=MsoNormal><span lang=EN><img border=0 width=624 height=348
+     id="Picture 10" src="neuros-pc-deployment_files/image020.gif"></span></li>
+ <li class=MsoNormal><span lang=EN>In this setting, select ENABLED. In the
+     combination box below select “Restrict C Drive only”.</span></li>
+ <li class=MsoNormal><span lang=EN>After completing the last step, Shut Down
+     the computer.</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
